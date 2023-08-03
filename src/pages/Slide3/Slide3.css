@@ -1,0 +1,60 @@
+@font-face {
+  font-family: Sriracha;
+  src: url("../../assets/font/IntelligentBold_1.otf");
+}
+@font-face {
+  font-family: Averta Std CY;
+  src: url("../../assets/font/IntelligentRegular_3.otf");
+}
+.Page3{
+  background-image: url("../../assets/images/photo3.png");
+  padding: 100px 70px;
+  padding-bottom: 120px;
+  background-size: cover;
+}
+#title {
+  font-size: 120px;
+  font-weight: 800;
+  line-height: 85px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  margin-top: 80px;
+  color: rgba(255, 255, 255, 0);
+  -webkit-text-stroke-width: 0.2px;
+  -webkit-text-stroke-color: #ffffff;
+}
+#title_energy {
+  font-size: 120px;
+  font-weight: 800;
+  line-height: 85px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  margin-top: 85px;
+  color: rgba(255, 255, 255, 0);
+  -webkit-text-stroke-width: 0.2px;
+  -webkit-text-stroke-color: #ffffff;
+}
+span {
+  color: rgba(76, 167, 87, 1);
+  -webkit-text-stroke-width: 0;
+}
+#introduce {
+  width: 448px;
+  height: 112px;
+  margin-left: 800px;
+  font-family: "Averta Std CY";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+#introduce span {
+  font-family: "Sriracha";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #ffffff;
+}

@@ -1,0 +1,74 @@
+.img_card {
+  width: 104px;
+  height: 104px;
+  border-radius: 50%;
+}
+.Page {
+  width: 100%;
+  height: 100%;
+}
+.btn_slide {
+  width: 100%;
+  position: relative;
+  top: -155px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.Page::after {
+  content: " ";
+  position: absolute;
+  width: 20%;
+  height: 10px;
+  top: 82.5%;
+  left: 0;
+  transition: all 0.15s ease;
+  border-bottom: 6px solid rgba(76, 167, 87, 1);
+  animation: timeShowSlide 6s infinite linear;
+}
+.slick-prev {
+  display: none !important;
+}
+.slick-next {
+  display: none !important;
+}
+.slick-dots {
+  display: flex !important;
+  justify-content: space-evenly;
+}
+
+.slick-dots button {
+  font-size: 0;
+  width: 104px;
+  height: 104px;
+  border-radius: 50%;
+  position: relative;
+  top: -50%;
+  z-index: 1;
+  opacity: 0;
+}
+.slick-dots .slick-active button {
+  padding: 5%;
+  background-color: green;
+  transition: all 0.3s linear;
+  opacity: 1;
+}
+
+@keyframes timeShowSlide {
+  from {
+    width: 20%;
+  }
+  to {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .Page::after {
+    display: none;
+  }
+  .btn_slide {
+    display: none;
+  }
+  .slick-dots button {
+    display: none;
+  }
+}

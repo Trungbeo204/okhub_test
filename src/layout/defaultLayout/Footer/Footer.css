@@ -1,0 +1,91 @@
+@font-face{
+  font-family: Averta Std CY;
+  src:url("../../../assets/font/IntelligentRegular_3.otf")
+}
+.Footer {
+  background-image: url("../../../assets/images/background_footerpng.png");
+  padding: 0 70px;
+}
+.contact{
+  display: grid;
+  grid-template-columns: 24% 24% 24%;
+  gap: 178px;
+}
+img {
+  width: 191px;
+  height: 126px;
+  text-align: center;
+}
+#icon {
+  width: 100%;
+  text-align: center;
+  margin-top: 105px;
+}
+p {
+  font-family: 'Averta Std CY';
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 45px;
+  text-align: left;
+  color: #ffffff;
+}
+.about_us {
+  margin-top: 105px;
+  display: flex;
+}
+ul {
+  list-style-type: none;
+  color: #ffffff;
+}
+.signUp {
+  margin-top: 105px;
+}
+#signUp_box{
+  display: flex;
+}
+.icon_send{
+  width: 100%;
+  padding: 10px 0;
+  background-color: rgba(255, 255, 255, 0.5); 
+  color:#ffffff;
+}
+input {
+  /* width: 284.78px; */
+  width: 100%;
+  padding: 10px 0;
+	border: none;
+  border-bottom: 1px solid #333;
+	outline: none;
+  background: rgba(255, 255, 255, 0.5);
+}
+input::-webkit-input-placeholder {
+  font-size: 15px;
+  opacity: 0.7;
+}
+
+#address{
+  display: grid;
+  grid-template-columns: 37.6% 62.4%;
+  padding: 10px 0;
+  border-top: 1px solid #ffffff;
+  margin-top: 20px;
+}
+#phone{
+  display: grid;
+  grid-template-columns: 37.6% 31.2% 31.2%;
+  padding: 10px 0 20px 0;
+  border-top: 1px solid #ffffff;
+}
+@media screen and (max-width:1400px) {
+  .contact{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .about_us{
+    margin-top: 5px;
+  }
+  .signUp{
+    margin-top: 5px;
+  }
+}

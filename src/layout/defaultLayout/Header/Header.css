@@ -1,0 +1,25 @@
+.header {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.img {
+  width: 172px;
+  height: 74px;
+  margin-top: 12px;
+}
+#phoneNumber {
+  border: 1px solid #FFFFFF;
+  color: #FFFFFF;
+  border-radius: 20px;
+  padding:0.5% 1.5%;
+  margin-top: 25px;
+  width: 20%;
+  text-align: center;
+  height: 35%;
+  float: right;
+}
+@media screen and (max-width : 1400px) {
+  #phoneNumber{
+    display: none;
+  }
+}

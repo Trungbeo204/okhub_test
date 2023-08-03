@@ -1,0 +1,143 @@
+@font-face {
+  font-family: Averta Std CY;
+  src: url("../../../assets/font/IntelligentRegular_3.otf");
+}
+.Bars{
+  text-align: right;
+  font-size: 20px;
+  display: none;
+}
+.menu {
+  display: grid;
+  grid-template-columns: 13.4% 13.4% 13.4% 13.4% 13.4% 13.4% 13.4%;
+  list-style-type: none;
+  gap: 13px;
+}
+.menu_Item {
+  text-align: center;
+  padding-top: 6px;
+  color: #ffffff;
+  border-top: 1px solid #524c4c;
+  position: relative;
+}
+.menu_Item::after {
+  content: "";
+  position: absolute;
+  width: 0px;
+  height: 10px;
+  transition: all 0.3s ease;
+  top: 0px;
+  left: 0;
+  border-top: 1px solid white;
+}
+
+.menu_Item:hover:after {
+  width: 100%;
+}
+.icon {
+  font-size: 12px;
+}
+.list_item {
+  width: 40%;
+}
+.Navbar:hover .menu_son {
+  display: flex;
+}
+.menu_son {
+  display: none;
+  padding: 70px;
+  width: 90%;
+  height: max-content;
+  position: absolute;
+  background: linear-gradient(180deg, #4ca757 0%, #16a571 100%);
+}
+.menu_Item_son {
+  width: 65%;
+  height: 34px;
+  gap: 126px;
+  font-family: 'Averta Std CY';
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 34px;
+  letter-spacing: 0px;
+  text-align: left;
+  padding: 8% 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  transition: border-bottom 0.3s linear;
+  cursor: pointer;
+  position: relative;
+}
+.menu_Item_son::after{
+  content: '';
+  width: 0px;
+  height: 1px;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: rgba(255, 255, 255, 1);
+  transition: width 0.3s linear;
+}
+.menu_Item_son:hover::after{
+  width: 100%;
+}
+.img_box {
+  display: flex;
+}
+.image_card {
+  width: 60%;
+  height: 350px;
+}
+.Introduce {
+  font-family: 'Averta Std CY';
+  font-size: 39px;
+  font-weight: 700;
+  line-height: 47px;
+  letter-spacing: 0px;
+  text-align: left;
+  padding: 10% 0 10% 10%;
+}
+.describe {
+  width: 427px;
+  height: 81px;
+  font-family: Averta Std CY;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin: 5% 0 10% 10%;
+  opacity: 0.8;
+}
+.describe_btn {
+  border: none;
+  background-color: rgba(255, 255, 255, 0);
+  color: #ffffff;
+  border-radius: 20px;
+  padding:2% 5%;
+  margin: 2% 0 10% 10%;
+
+}
+.describe_btn:hover{
+  background-color: #4ca757;
+}
+
+@media screen and (max-width:1400px) {
+  .Bars{
+    display: block;
+  }
+  .menu{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+  }
+  .Navbar{
+    display: none;
+  }
+  .Navbar:hover .menu_son{
+    display: none;
+  }
+  .menu_Item{
+    text-align: left;
+    padding: 1.5%;
+  }
+}

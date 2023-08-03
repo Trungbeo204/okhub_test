@@ -1,38 +1,25 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: Averta Std CY;
+  src: url("./assets/font/IntelligentRegular_3.otf");
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Averta Std CY";
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Nav {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  padding: 0 70px;
+  z-index: 1;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.Nav:hover {
+  background-color: #16a571;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+@media screen and (max-width: 1400px) {
+  .Nav {
+    background-color: #16a571;
   }
 }
